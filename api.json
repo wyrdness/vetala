@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/vetala",
     "maintainers": [
       {
@@ -16,72 +16,138 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "vetala",
-    "name": "",
-    "aliases": [],
+    "name": "Vetala",
+    "aliases": [
+      { "name": "Vetal", "language": "Hindi", "region": "North India" },
+      { "name": "Betal", "language": "Hindi/Marathi", "region": "South Asia" },
+      { "name": "Baital", "language": "Hindi", "region": "North India", "meaning": "form used in Baital Pachisi" },
+      { "name": "Vetoba", "language": "Konkani", "region": "Konkan, western India" },
+      { "name": "Vetāla", "language": "Sanskrit", "meaning": "spirit inhabiting corpses" }
+    ],
     "category": "UNDEAD",
-    "subcategory": "Unknown",
+    "subcategory": "Corpse-possessing spirit",
     "tags": [
+      "hindu-mythology",
+      "sanskrit",
+      "spirit",
+      "corpse",
+      "south-asia",
       "folklore",
       "mythology"
     ],
     "status": "documented",
     "description": {
-      "summary": "No description available.",
-      "full": ""
+      "summary": "A class of spirit-beings in Hindu mythology that inhabits and animates corpses, traditionally associated with cremation grounds, fortune-telling, and the riddle-cycle of Vikramaditya in the Vetala Panchavimshati.",
+      "full": "The vetala (Sanskrit: वेताल, vetāla) is a paranormal entity in Hindu mythology described as a disembodied spirit that uses reanimated corpses as vehicles. Vetalas are said to inhabit charnel grounds and burning ghats, where they may be approached or captured by tantric practitioners. They possess supernatural knowledge — including knowledge of the past, present, and future — and are most famous in the literary tradition through the Vetala Panchavimshati ('Twenty-Five Tales of the Vetala'), a frame-tale cycle preserved within Somadeva's eleventh-century Sanskrit Kathasaritsagara, in which King Vikramaditya repeatedly carries a vetala-possessed corpse from a cremation ground while the spirit poses riddles. In regional traditions, especially of the Konkan coast, Vetoba/Betal is venerated as a guardian deity and consort of the goddess Shantadurga, with established temples. Vetalas are typically distinguished from other Indian undead such as pretas (hungry ghosts) and bhutas (ghosts of the unsettled dead) by their specific association with corpses and their oracular function."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Sanskrit वेताल (vetāla); the etymology is uncertain but the term is attested in classical Sanskrit literature and tantric texts.",
+      "meaning": "A class of spirit that animates corpses; sometimes glossed simply as 'ghoul' or 'corpse-spirit' in English translations.",
+      "first_use": "Classical Sanskrit; the Vetala Panchavimshati cycle is preserved in Somadeva's Kathasaritsagara, compiled in the 11th century CE."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "UNDEAD",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Spirit / corpse-possessor",
+      "subtype": "Hindu cremation-ground spirit",
+      "variant": "South Asian"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "preta", "name": "Preta", "relationship": "related", "description": "Hungry ghost in Hindu and Buddhist tradition" },
+      { "id": "bhuta", "name": "Bhūta", "relationship": "related", "description": "Restless ghost of the dead in Hindu tradition" },
+      { "id": "pishacha", "name": "Pishacha", "relationship": "similar", "description": "Flesh-eating demonic spirit of Hindu mythology" },
+      { "id": "vrykolakas", "name": "Vrykolakas", "relationship": "similar", "description": "Greek revenant inhabiting a corpse" },
+      { "id": "jiangshi", "name": "Jiangshi", "relationship": "similar", "description": "Chinese reanimated corpse" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["pale", "ashen", "as of a recently dead body"],
+      "features": [
+        { "feature": "Possessed corpse", "description": "Vetalas are not embodied themselves; they animate the dead body of another being, typically found in or near a cremation ground", "frequency": "always" },
+        { "feature": "Hangs upside down", "description": "In the Vetala Panchavimshati, the vetala is found hanging from a tree by its feet, in the manner of a bat", "frequency": "common" },
+        { "feature": "Cold to the touch", "description": "Reanimated body retains the appearance and chill of a corpse", "frequency": "common" }
+      ],
+      "morphology": "Has no body of its own; possesses and animates human corpses, which it may also abandon at will."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Corpse possession", "description": "Enters and animates a dead body, leaving when no longer required", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Knowledge of past, present, and future", "description": "Vetalas are said to possess oracular knowledge sought after by tantric practitioners and kings", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Storytelling and riddling", "description": "Famously poses riddles in the Vetala Panchavimshati frame-narrative", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Causing illness and miscarriage", "description": "In folk traditions, vetalas may attack pregnant women and drive people to madness", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Binding by mantra", "description": "Can be controlled, bound, or repelled by Sanskrit mantras and tantric rites", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "variable",
+      "social_structure": "solitary",
+      "habitat_preference": ["cremation grounds", "charnel grounds", "abandoned trees near burial places"],
+      "diet": "Not described as feeding in the conventional sense; tradition associates vetalas with the residues of corpses and offerings.",
+      "patterns": [
+        "Frequents cremation grounds at night",
+        "Engages tantric practitioners and kings in riddles or bargains",
+        "Can be enslaved by sorcerers but freed through proper funeral rites for the corpse"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "The vetala is a feature of Hindu mythology and South Asian folklore, with the strongest literary and cultic tradition in India and Nepal. Regional veneration of Vetoba/Betal is concentrated in the Konkan coastal region of western India.",
+      "continents": ["Asia"],
+      "countries": ["India", "Nepal"],
+      "regions": [
+        "South Asia",
+        "Konkan coast",
+        "Goa",
+        "Maharashtra",
+        "Karnataka"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Konkan coast (Vetoba veneration)",
+        "location": {
+          "description": "Coastal western India, particularly Goa and southern Maharashtra",
+          "country": "India",
+          "region": "Konkan"
+        },
+        "peak_period": "Pre-modern to present",
+        "notes": "Region with established Vetoba/Betal temples where the deity is worshipped as a guardian and consort of Shantadurga."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "11th century",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Somadeva, Kathasaritsagara"
+      },
+      "peak_activity_periods": [
+        { "period": "11th–12th century", "description": "Composition of the major Sanskrit recensions of the Vetala Panchavimshati" },
+        { "period": "19th century", "description": "Translation into European languages, including Burton's 1870 English adaptation, popularises the cycle internationally" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Hindu mythology and tantric tradition of South Asia.",
+      "earliest_accounts": "The vetala is attested in classical Sanskrit literature; the most influential cycle is the Vetala Panchavimshati, preserved within Somadeva's 11th-century Kathasaritsagara.",
+      "folklore_connections": "Connected to a wider South Asian complex of cremation-ground spirits (pretas, bhutas, pishachas) and to a global motif of the corpse-possessing revenant."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1063-01-01", "event": "Somadeva compiles the Kathasaritsagara, including the Vetala Panchavimshati frame-cycle", "significance": "Earliest preserved Sanskrit recension of the major vetala narrative", "source": "Somadeva, Kathasaritsagara" },
+      { "date": "1870-01-01", "event": "Sir Richard F. Burton publishes 'Vikram and the Vampire', a free English adaptation of the Baital Pachisi", "significance": "Introduces the vetala cycle to a wide European readership", "source": "Burton, R. F. (1870)" }
+    ],
+    "modern_era": "The vetala persists in modern Indian popular culture through retellings of the Vikram and Betal cycle in print, comics (Amar Chitra Katha), television (the 1985 Doordarshan series Vikram aur Betaal), and cinema, while Vetoba/Betal continues to be venerated as a regional deity along the Konkan coast."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +158,123 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "vetala-evidence-vetala-panchavimshati",
+        "type": "literary corpus",
+        "name": "Vetala Panchavimshati / Baital Pachisi",
+        "description": "Sanskrit frame-tale cycle of twenty-five stories told by a vetala to King Vikramaditya, preserved within Somadeva's Kathasaritsagara and in independent recensions by Śivadāsa and Jambhaladatta.",
+        "status": "verified",
+        "analysis": "Foundational literary attestation of the vetala in Indian tradition; widely studied in Sanskrit and comparative literature.",
+        "source": "Somadeva, Kathasaritsagara (11th c.)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Tantric corpse-spirit",
+        "description": "Within Hindu and tantric tradition, the vetala is understood as a real spirit-class that may be propitiated, bound, or commanded by ritual specialists, particularly at cremation grounds.",
+        "proponents": ["Tantric and folk Hindu traditions"],
+        "evidence_cited": ["Sanskrit and vernacular textual tradition", "Living Vetoba/Betal cult on the Konkan coast"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Literary motif and folk explanation of corpse phenomena",
+        "description": "Comparative folklorists treat the vetala as a literary and folk motif that gives narrative form to anxieties about the dead, the cremation ground, and bodily decay rather than as a discrete external entity.",
+        "proponents": ["Comparative folklore scholarship"],
+        "evidence_cited": ["Cross-cultural parallels with revenant traditions (vrykolakas, jiangshi)", "Standard taphonomic explanations for post-mortem movement and bloating"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Hindu cremation-ground lore",
+        "Tantric ritual traditions",
+        "Konkan Vetoba veneration"
+      ],
+      "stories": [
+        "Vetala Panchavimshati (Twenty-Five Tales of the Vetala)",
+        "Vikram and Betal cycle as told in the Kathasaritsagara"
+      ],
+      "beliefs": "In folk Hindu tradition, vetalas are dangerous but bindable spirits associated with the dead; in regional Konkan worship, Vetoba/Betal is honoured as a powerful guardian deity rather than as an unambiguous monster."
+    },
+    "indigenous": {
+      "cultures": ["Hindu communities of South Asia", "Konkani communities"],
+      "significance": "The vetala participates both in the high literary culture of classical Sanskrit and in living regional cult practice; it should not be reduced to a 'monster' in the European sense.",
+      "sensitivity_note": "Vetoba/Betal is a living object of religious veneration for some communities; descriptions should distinguish literary vetalas from worshipped deities.",
+      "respect_guidelines": "Where discussing Vetoba/Betal in a religious context, follow community framings and avoid conflation with horror-genre uses of the term."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Kathasaritsagara — Somadeva (11th c.)",
+        "Vikram and the Vampire — Sir Richard F. Burton (1870)",
+        "Baital Pachisi (numerous Hindi and Sanskrit recensions)"
+      ],
+      "film_tv": [
+        "Vikram aur Betaal (Doordarshan, 1985)",
+        "Vikram Betal Ki Rahasya Gatha (2018)"
+      ],
       "games": [],
-      "other": []
+      "music": [],
+      "other": [
+        "Amar Chitra Katha comic adaptations of the Vikram and Betal cycle"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Somadeva", "affiliation": "Kashmiri court poet, 11th century", "contribution": "Compiled the Kathasaritsagara, including the Vetala Panchavimshati", "period": "11th century" },
+      { "name": "Sir Richard F. Burton", "affiliation": "British orientalist and translator", "contribution": "1870 English adaptation 'Vikram and the Vampire'", "period": "19th century" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "Vetala material is studied within Sanskrit literature, comparative folklore, and the anthropology of South Asian religion; there is no field-investigation programme in the cryptozoological sense."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-vetala",
+      "type": "website",
+      "title": "Vetala",
+      "url": "https://en.wikipedia.org/wiki/Vetala",
+      "publication": "Wikipedia",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "wikipedia-vetala-panchavimshati",
+      "type": "website",
+      "title": "Vetala Panchavimshati",
+      "url": "https://en.wikipedia.org/wiki/Vetala_Panchavimshati",
+      "publication": "Wikipedia",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "burton-1870",
+      "type": "book",
+      "title": "Vikram and the Vampire; or, Tales of Hindu Devilry",
+      "authors": ["Richard F. Burton"],
+      "publication": "Longmans, Green, and Co.",
+      "date": "1870"
+    },
+    {
+      "id": "somadeva-kathasaritsagara",
+      "type": "book",
+      "title": "Kathasaritsagara (Ocean of the Streams of Story)",
+      "authors": ["Somadeva"],
+      "date": "c. 1063-1081"
+    }
+  ]
 }
